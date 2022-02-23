@@ -231,6 +231,13 @@ header .header__item .form__wrapper form .input__field .input {
   outline: none;
 }
 
+@media (max-width: 400px) {
+  header .header__item .form__wrapper form .input__field .input {
+    -webkit-box-shadow: 2px 3px 7px #221f3a;
+            box-shadow: 2px 3px 7px #221f3a;
+  }
+}
+
 header .header__item .form__wrapper form .input__field .input::-webkit-input-placeholder {
   font-size: 16px;
   line-height: 24px;
@@ -271,22 +278,6 @@ header .header__item .form__wrapper form .input__field .form__btn {
 header .header__item .form__wrapper form .input__field .form__btn:hover {
   color: #626aef;
   background: #ecf5ff;
-}
-
-header .header__item .form__wrapper form .form__subtext {
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 39px;
-  text-transform: uppercase;
-  color: #221f3a;
-  text-align: center;
-  margin-top: 30px;
-}
-
-@media (max-width: 992px) {
-  header .header__item .form__wrapper form .form__subtext {
-    display: none;
-  }
 }
 
 main > h1 {

@@ -223,19 +223,14 @@ header .header__item .form__wrapper form .input__field {
 
 header .header__item .form__wrapper form .input__field .input {
   width: 100%;
-  -webkit-box-shadow: 2px 3px 7px #221f3a;
-          box-shadow: 2px 3px 7px #221f3a;
+  box-shadow: 2px 3px 7px #221f3a;
   border-radius: 10px;
   padding: 23px 0 20px 20px;
   border: none;
   outline: none;
-}
-
-@media (max-width: 400px) {
-  header .header__item .form__wrapper form .input__field .input {
-    -webkit-box-shadow: 2px 3px 7px #221f3a;
-            box-shadow: 2px 3px 7px #221f3a;
-  }
+  -webkit-box-shadow: 2px 3px 7px #221f3a;
+  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 2px 3px 7px #221f3a;
 }
 
 header .header__item .form__wrapper form .input__field .input::-webkit-input-placeholder {

@@ -233,6 +233,14 @@ header .header__item .form__wrapper form .input__field .input {
   -moz-box-shadow: 2px 3px 7px #221f3a;
 }
 
+@media (max-width: 992px) {
+  header .header__item .form__wrapper form .input__field .input {
+    border: 1px solid #221f3aa8;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
 header .header__item .form__wrapper form .input__field .input::-webkit-input-placeholder {
   font-size: 16px;
   line-height: 24px;
@@ -260,7 +268,7 @@ header .header__item .form__wrapper form .input__field .input::placeholder {
 header .header__item .form__wrapper form .input__field .form__btn {
   position: absolute;
   right: -17px;
-  top: 3px;
+  top: 4px;
   border: none;
   outline: none;
   border-radius: 10px;

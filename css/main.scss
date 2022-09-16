@@ -17,12 +17,12 @@ section{
 }
 
 $basic1: #221f3a;
-$basic2: #c5cd5a;
-$basic3: #626aef;
-$basic4: #ecf5ff;
+$basic2: #f7f05a;
+$basic3: #a955a5;
+$basic4: white;
 
 $text1: #221f3a;
-$text2: #626aef;
+$text2: #a955a5;
 
 
 
@@ -80,8 +80,8 @@ header {
       box-sizing: border-box;
       border-radius: 10px;
       &:hover{
-        background-color: #626aef0a;
         border: 2px solid $basic1;
+        color: $text1;
       }
       @media (max-width: 992px) {
         padding: 10px 15px;
@@ -198,8 +198,9 @@ header {
               padding: 18px 20px;
               cursor: pointer;
               &:hover{
-                color: #626aef;
-                background: #ecf5ff;
+                color: $text2;
+                background: $basic4;
+                // border: 2px solid $basic3;
               }
             }
           }
@@ -237,10 +238,11 @@ main > h1{
       border-radius: 12px;
       margin-top: 3%;
       text-align: center;
-      color: $text1;
+      color: $text2;
       &:hover {
         background-color: #626aef0a;
         border: 2px solid $basic1;
+        color: $text1;
         
     }
     }
@@ -285,15 +287,16 @@ main > h1{
       border-radius: 12px;
       margin-top: 3%;
       text-align: center;
+      color: $text2;
       background-color: $basic4;
       border: 2px solid $basic3;
       a{
-        color:  $text1;
+        color:  $text2;
         font-size: 18px;
       }
       &:hover{
         border: 2px solid $basic1;
-        background-color: #626aef0a;
+        color: $text1;
       }
     }
   }
@@ -304,8 +307,8 @@ main > h1{
 .footer {
   flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
   padding: 20px;
-  color: $basic2;
-  background-color: $basic1;
+  color: white;
+  background-color: $basic3;
   align-content: center;
   display: flex;
   flex-direction: column;
